@@ -235,90 +235,90 @@ const characters = [
   {
     name: "Observer",
     color: "#8000ff",
-    image: "img/rostro-observer.jpg",
-    hoverImage: "img/observer.jpg",
-    selectedImage: "img/observer.jpg",
+    image: "assets/rostro-observer.png",
+    hoverImage: "assets/observer.png",
+    selectedImage: "assets/observer.png",
     lore: "Entidad que observa el multiverso de Undertale... jajaja siempre va por el pan",
     model: "https://sketchfab.com/3d-models/melon-bread-52cd48ba01084e0dba1ad5834bc14919/embed"
   },
   {
     name: "Bright",
     color: "#ffe500",
-    image: "img/bright-rostro.jpg",
-    hoverImage: "img/brigth.jpg",
-    selectedImage: "img/brigth.jpg",
+    image: "assets/bright-rostro.png",
+    hoverImage: "assets/brigth.png",
+    selectedImage: "assets/brigth.png",
     lore: "Portador de la luz del conocimiento... fanático de los pasteles de limón (son doritos jaja)",
     model: "https://sketchfab.com/3d-models/8490d24e-a612-412f-b6d6-0eeeb5747630-77244b4b3ec14c3f85f064227d87bfc3/embed"
   },
   {
     name: "Player",
     color: "#ff78c2",
-    image: "img/player1.jpg",
-    hoverImage: "img/player.jpg",
-    selectedImage: "img/player.jpg",
+    image: "assets/player1.png",
+    hoverImage: "assets/player.png",
+    selectedImage: "assets/player.png",
     lore: "El eco del alma humana...la loca de los pasteles de calabaza",
     model: "https://sketchfab.com/3d-models/pumpkin-pie-slice-with-whipped-cream-be28d682a52a4d0b95d3310bad2f0c64/embed"
   },
   {
     name: "Null",
     color: "#9ddfff",
-    image: "img/null1.jpg",
-    hoverImage: "img/null.jpg",
-    selectedImage: "img/null.jpg",
+    image: "assets/null1.png",
+    hoverImage: "assets/null.png",
+    selectedImage: "assets/null.png",
     lore: "La nada hecha conciencia...callado pero mira que ya adora las galletas de gato",
     model: "https://sketchfab.com/3d-models/gato-galleta-cookie-cat-fd5c12450ed64b98b1e6cd1503d07c2d/embed"
   },
   {
     name: "Consillium",
     color: "#009dff",
-    image: "img/consilium.jpg",
-    hoverImage: "img/consi.jpg",
-    selectedImage: "img/consi.jpg",
+    image: "assets/consilium.png",
+    hoverImage: "assets/consi.png",
+    selectedImage: "assets/consi.png",
     lore: "Consejero del vacío... siempre con una galleta en mano",
     model: "https://sketchfab.com/3d-models/cookie-realista-f32baa1e83684842a155e6e1a0c5fbab/embed"
   },
   {
     name: "Chara // SYS-00",
     color: "#b19cd9",
-    image: "img/sys-00.jpg",
-    hoverImage: "img/sys.jpg",
-    selectedImage: "img/sys.jpg",
+    image: "assets/sys-00.png",
+    hoverImage: "assets/sys.png",
+    selectedImage: "assets/sys.png",
     lore: "Una versión reconfigurada de Chara... pero siempre con hambre de panqueques",
     model: "https://sketchfab.com/3d-models/panqueque-gato-cat-shaped-pancakes-1-c943e1264ee84ac19f4899ab189551d0/embed"
   },
   {
     name: "Paraflawey",
     color: "#b14c8e",
-    image: "img/paraflawey1.jpg",
-    hoverImage: "img/paraflawey.jpg",
-    selectedImage: "img/paraflawey.jpg",
+    image: "assets/paraflawey1.png",
+    hoverImage: "assets/paraflawey.png",
+    selectedImage: "assets/paraflawey.png",
     lore: "Una flor distorsionada por la corrupción... con fijacion por la pasta",
     model: "https://sketchfab.com/3d-models/pasta-with-meatballs-and-sausage-047a5a885ce144969ea49984f657062a/embed"
   },
   {
     name: "Noir",
     color: "#b49eff",
-    image: "img/noir1.jpg",
-    hoverImage: "img/noir.jpg",
-    selectedImage: "img/noir.jpg",
+    image: "assets/noir1.png",
+    hoverImage: "assets/noir.png",
+    selectedImage: "assets/noir.png",
     lore: "Guardián del silencio...   y amante de los melones (jaja lo suena mal)",
     model: "https://sketchfab.com/3d-models/melon-plate-e0bc6e5c11974572acdff645eada7edb/embed"
   },
   {
     name: "Somber",
     color: "#9ed0ff",
-    image: "img/somber1.jpg",
-    hoverImage: "img/somber.jpg",
-    selectedImage: "img/somber.jpg",
+    image: "assets/somber1.png",
+    hoverImage: "assets/somber.png",
+    selectedImage: "assets/somber.png",
     lore: "Reflejo de la tristeza universal... y fanática de los pasteles",
     model: "https://sketchfab.com/3d-models/3d-sketchbook-4---pie-0dbe497e7116461dbe97256786e7ecf1/embed"
   },
   {
     name: "Coder",
     color: "#ff3b3b",
-    image: "img/coder1.jpg",
-    hoverImage: "img/coder.jpg",
-    selectedImage: "img/coder.jpg",
+    image: "assets/coder1.png",
+    hoverImage: "assets/coder.png",
+    selectedImage: "assets/coder.png",
     lore: "Infección viviente del sistema...la comida chatarra es su segunda habilidad ",
     model: "https://sketchfab.com/3d-models/comida-3d-790d0cba1bde49f79bf6e3d7b92f8bd1/embed"
   }
@@ -340,10 +340,10 @@ characters.forEach((char, index) => {
   `;
 
   div.addEventListener('mouseenter', () => {
-    div.querySelector('img').src = char.hoverImage;
+    div.querySelector('assets').src = char.hoverImage;
   });
   div.addEventListener('mouseleave', () => {
-    div.querySelector('img').src = char.image;
+    div.querySelector('assets').src = char.image;
   });
 
   div.addEventListener('click', () => selectCharacter(index));
